@@ -6,8 +6,8 @@ This project is a recreation of the AMZexpand landing page, developed as part of
 
 ## Links
 
-- **Source Code**: [https://github.com/Jiya-Patel27/AMZexpand](https://github.com/Jiya-Patel27/AMZexpand)
 - **Live Preview**: [https://amz-expand-psi.vercel.app/](https://amz-expand-psi.vercel.app/)
+- **Source Code**: [https://github.com/Jiya-Patel27/AMZexpand](https://github.com/Jiya-Patel27/AMZexpand)
 
 ## Technical Stack
 
@@ -51,9 +51,9 @@ This project is a recreation of the AMZexpand landing page, developed as part of
 
 **Name:** Jiya Patel  
 **Email:** jiyapatel4892@gmail.com  
-**GitHub:** [Jiya-Patel27](https://github.com/Jiya-Patel27)
-**LinkedIn:** [Jiya-Patel](https://www.linkedin.com/in/jiya-patel-182325303)
-**Portfolio:** [My-Portfolio](https://minimum-spinosaurus-970603.framer.app/)
+**GitHub:** [Jiya-Patel27](https://github.com/Jiya-Patel27)   
+**LinkedIn:** [Jiya-Patel](https://www.linkedin.com/in/jiya-patel-182325303)    
+**Portfolio:** [My-Portfolio](https://minimum-spinosaurus-970603.framer.app/)    
 
 ---
 <!-- 
