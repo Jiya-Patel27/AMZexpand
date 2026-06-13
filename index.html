@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AMZexpand — V2</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
   <!-- ══ HEADER ══ -->
   <header class="hdr" id="site-header">
     <div class="hdr-inner">
-      <a href="#" class="hdr-wordmark">AMZ Expand</a>
+      <a href="#" class="hdr-wordmark">
+        <img src="assets/logo-b.png" alt="AMZ Expand" style="height: 40px; width: auto;">
+      </a>
       <nav class="hdr-nav">
         <a href="#" class="hdr-link">How It Works</a>
         <a href="#" class="hdr-cta">Book Your Free Audit</a>
@@ -38,9 +43,16 @@
       </h1>
 
       <p class="s1-sub">
-        Not the product. The advertising, listings, and catalog have stopped working together. Watch the video to see what those problems are — then let us show you which ones are in yours.
+        Not the product. The advertising, listings, and catalog have stopped working together. Watch the video to see
+        what those problems are — then let us show you which ones are in yours.
       </p>
 
+      <div class="s1-see-it">
+        <span class="s1-see-it-text">See it in action</span>
+        <svg viewBox="0 0 18 18" class="s1-see-it-arrow">
+          <path d="M3 9h12M10 4l5 5-5 5" />
+        </svg>
+      </div>
       <div class="s1-vsl">
         <div class="vsl-card">
           <div class="s1-thumb">
@@ -49,20 +61,24 @@
               <div class="play-pulse" style="width:64px;height:64px;" aria-hidden="true"></div>
               <div class="play-pulse" style="width:64px;height:64px;animation-delay:-1.1s;" aria-hidden="true"></div>
               <div class="s1-play-btn" role="button" tabindex="0" aria-label="Play video: Watch the audit breakdown">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
               </div>
             </div>
-            <div class="s1-thumb-footer">
+            <!-- <div class="s1-thumb-footer">
               <span>Watch the audit breakdown</span>
               <span class="s1-duration">12:34</span>
-            </div>
+            </div> -->
           </div>
         </div>
 
         <div class="s1-kpi">
           <div class="s1-kpi-row">
             <div class="s1-kpi-chip">
-              <svg viewBox="0 0 12 12"><path d="M6 10V2M2 6l4-4 4 4"/></svg>
+              <svg viewBox="0 0 12 12">
+                <path d="M6 10V2M2 6l4-4 4 4" />
+              </svg>
               <span>Recovered</span>
             </div>
           </div>
@@ -71,24 +87,38 @@
         </div>
       </div>
 
+      <div class="s1-cta-header">
+        <div class="s1-cta-label">
+          <span class="s1-cta-dot"></span>
+          2 audit slots left for this week
+        </div>
+      </div>
       <a href="#" class="s1-cta">
         Book Your Free Amazon Audit
-        <svg viewBox="0 0 18 18"><path d="M3 9h12M10 4l5 5-5 5"/></svg>
+        <svg viewBox="0 0 18 18">
+          <path d="M3 9h12M10 4l5 5-5 5" />
+        </svg>
       </a>
 
       <div class="s1-trust">
         <div class="s1-trust-item label-caps">
-          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg>
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M2.5 8.5l3.5 3.5 7.5-8" />
+          </svg>
           Free Audit
         </div>
         <div class="s1-sep" aria-hidden="true"></div>
         <div class="s1-trust-item label-caps">
-          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg>
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M2.5 8.5l3.5 3.5 7.5-8" />
+          </svg>
           No Commitment
         </div>
         <div class="s1-sep" aria-hidden="true"></div>
         <div class="s1-trust-item label-caps">
-          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8.5l3.5 3.5 7.5-8"/></svg>
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M2.5 8.5l3.5 3.5 7.5-8" />
+          </svg>
           48 Hour Turnaround
         </div>
       </div>
@@ -104,11 +134,28 @@
   <section class="s2">
     <div class="s2-inner">
 
-      <p class="s2-lead">Across <span class="ph">200+</span> accounts audited, sellers recovered an average of</p>
-      <span class="s2-number"><span id="s2-counter">$0</span>+</span>
-      <p class="s2-trail">in the first 90 days.</p>
+      <div class="s2-top">
+        <img src="assets/amazon-icon.png" alt="Amazon" class="s2-amazon-icon">
+        <p class="s2-lead">Across <span class="ph">200+</span> accounts audited, sellers recovered an average of</p>
+      </div>
+      <div class="s2-number-row">
+        <span class="s2-number"><span id="s2-counter">$0</span>+</span>
+        <p class="s2-trail">in the <strong>first 90 days.</strong></p>
+      </div>
 
       <p class="s2-support">That is what the audit finds. Before you spend a dollar.</p>
+
+      <!-- Logo Grid Section -->
+      <div class="s2-logos">
+        <div class="s2-logos-grid">
+          <img src="assets/amz1.png" alt="Brand 1" class="s2-logo">
+          <img src="assets/amz2.png" alt="Brand 2" class="s2-logo">
+          <img src="assets/amz3.png" alt="Brand 3" class="s2-logo">
+          <img src="assets/amz4.png" alt="Brand 4" class="s2-logo">
+          <img src="assets/amz5.png" alt="Brand 5" class="s2-logo">
+          <img src="assets/amz6.png" alt="Brand 6" class="s2-logo">
+        </div>
+      </div>
 
     </div>
   </section>
@@ -126,37 +173,52 @@
       <div class="s3-cards">
 
         <div class="s3-card">
-          <div class="s3-card-top">
+          <!-- <div class="s3-card-top">
             <span class="s3-pill">1</span>
             <div class="s3-connector"></div>
+          </div> -->
+          <div class="s3-card-img">
+            <img src="assets/s3-1.png" alt="1" class="s3-img">
           </div>
-          <div class="s3-img">Image</div>
           <h3 class="s3-card-title">Not the product. The system.</h3>
-          <p class="s3-p">Most sellers spending too much on ads are not losing because of a bad product. They are losing because their advertising, listings, and catalog have stopped working as one system. The longer it goes unfixed, the worse it gets.</p>
+          <p class="s3-p">Most sellers spending too much on ads are not losing because of a bad product. They are losing
+            because their advertising, listings, and catalog have stopped working as one system. The longer it goes
+            unfixed, the worse it gets.</p>
         </div>
 
         <div class="s3-card">
-          <div class="s3-card-top">
+          <!-- <div class="s3-card-top">
             <span class="s3-pill">2</span>
             <div class="s3-connector"></div>
-          </div>
-          <div class="s3-img">Image</div>
+          </div> -->
+          <img src="assets/s3-2.png" alt="2" class="s3-img">
           <h3 class="s3-card-title">Structural problem. Structural fix.</h3>
-          <p class="s3-p">It is a structural problem across the whole account — and it has a structural fix. Not adjusting one thing in isolation. Rebuilding the connection between all three so they work together.</p>
+          <p class="s3-p">It is a structural problem across the whole account — and it has a structural fix. Not
+            adjusting one thing in isolation. Rebuilding the connection between all three so they work together.</p>
         </div>
 
         <div class="s3-card">
-          <div class="s3-card-top">
+          <!-- <div class="s3-card-top">
             <span class="s3-pill">3</span>
-          </div>
-          <div class="s3-img">Image</div>
+          </div> -->
+          <img src="assets/s3-3.png" alt="3" class="s3-img">
           <h3 class="s3-card-title">See the cost before you commit.</h3>
-          <p class="s3-p">Before you commit to anything, we show you exactly what is broken and what fixing it is worth. The audit takes 48 hours, costs nothing, and gives you a dollar-value estimate of what each problem is costing you every month.</p>
+          <p class="s3-p">Before you commit to anything, we show you exactly what is broken and what fixing it is worth.
+            The audit takes show exactly what is broken and what fixing it is worth.
+            The audit takes 48 hours, costs nothing, and gives you a dollar-value estimate of what each problem is
+            costing you every month.</p>
         </div>
 
       </div>
 
-
+      <div style="text-align: center; margin-top: 40px;">
+      <a href="#" class="s1-cta">
+        Book Your Free Amazon Audit
+        <svg viewBox="0 0 18 18">
+          <path d="M3 9h12M10 4l5 5-5 5" />
+        </svg>
+      </a>
+</div>
     </div>
   </section>
 
@@ -164,28 +226,32 @@
   <!-- ══════════════════════════════════════════════════════════
        SECTION 4 — QUOTE-FORWARD
        Source: section-04-layout-explorations-v2.html · Variant B
-  ══════════════════════════════════════════════════════════ -->
+    ══════════════════════════════════════════════════════════ -->
   <section class="s4">
     <div class="s4-inner">
 
-      <h2 class="s4-pullquote">I Built AMZ Expand To Give Other Sellers The System I Had To Figure Out <em>The Hard Way.</em></h2>
-      <div class="s4-rule"></div>
+      <div class="s4-layout">
+        <!-- Left Column: Founder Image & Attribution -->
+        <div class="s4-left">
+          <img src="assets/s4-1.jpg" alt="Founder" class="s4-founder-img">
+          <div class="s4-attribution-left">
+            <p class="s4-attr-name">Founder, AMZexpand</p><br>
+            <p class="s4-attr-stat">500+ Millions Generated</p>
+          </div>
+        </div>
 
-      <div class="s4-body">
-        <p class="s4-p">I did not read about Amazon and build an agency around it. I built Brushee from zero to multi-million dollars on Amazon myself. I ran the advertising. I fixed the listings. I watched ranking move when the system worked and stagnate when it did not.</p>
-        <p class="s4-p">When you work with us you are not getting a team that manages ads in isolation. You are getting operators who have built and run accounts from the inside — who know what broken looks like because they have fixed hundreds of them.</p>
-        <p class="s4-p">That is why we back every engagement with a 90-day performance guarantee. Not because it sounds good. Because we already know what we are going to find in your account.</p>
-      </div>
+        <!-- Right Column: Text -->
+        <div class="s4-right">
+          <h2 class="s4-pullquote">I Built AMZ Expand To Give Other Sellers The System I Had To Figure Out <em>The Hard Way.</em></h2>
+          <!-- <div class="s4-rule"></div> -->
 
-      <div class="s4-attribution">
-        <div class="s4-avatar"></div>
-        <div>
-          <p class="s4-attr-name">Founder</p>
-          <p class="s4-attr-role">AMZexpand</p>
+          <div class="s4-body">
+            <p class="s4-p">I did not read about Amazon and build an agency around it. I built <span class="s4-highlight">Brushee</span> from zero to <span class="s4-highlight">multi-million dollars</span> on Amazon myself. I ran the advertising. I fixed the listings. I watched ranking move when the system worked and stagnate when it did not.</p>
+            <p class="s4-p">When you work with us you are not getting a team that manages ads in isolation. You are getting operators who have built and run accounts from the inside, who know what broken looks like because they have fixed hundreds of them.</p>
+            <p class="s4-p">That is why we back every engagement with a 90-day performance guarantee. Not because it sounds good. Because we already know what we are going to find in your account.</p>
+          </div>
         </div>
       </div>
-
-
     </div>
   </section>
 
@@ -193,7 +259,7 @@
   <!-- ══════════════════════════════════════════════════════════
        SECTION 5 — 2×2 DATA CARDS
        Source: section-05-layout-explorations.html · Variant A
-  ══════════════════════════════════════════════════════════ -->
+    ══════════════════════════════════════════════════════════ -->
   <section class="s5">
     <div class="s5-inner">
 
@@ -205,20 +271,24 @@
       <!-- featured result -->
       <div class="s5-featured">
         <div class="s5-prod-img s5-feat-img">
-          <div class="s5-prod-img-grid"></div>
-          <span class="s5-prod-img-label">Product photo</span>
+          <div class="s5-prod-img-grid"><img src="assets/s5-1.png" alt="Product Image" width="100%" height="100%"></div>
+          <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
         </div>
         <div class="s5-feat-content">
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <span class="s5-feat-client">[Client Name]</span>
-            <span class="s5-tag">Home &amp; Kitchen</span>
-          </div>
-          <p class="s5-feat-narrative">Ad costs were at 34% of revenue. The previous agency said the category was just competitive. It was not — the listings were not converting the traffic the ads were buying. We rebuilt the system. Sixty-seven days later ad costs were at 11%, the product was on page one, and revenue was up 64% on the same spend. The seller's words: "I did not realise how much I had accepted as normal until I saw what normal was supposed to look like."</p>
-          <div class="s5-feat-stats">
+          <div class="s5-feat-header">
+            <div class="s5-feat-client">Jace Wilder</div>
+            <div class="s5-feat-meta">
+              <span class="s5-tag">HOME &amp; KITCHEN</span>
+              <span class="s5-rating">4.9 ⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="s5-feat-stats">
             <span class="s5-chip">ACoS 34% → 11%</span>
             <span class="s5-chip">Revenue +64%</span>
             <span class="s5-chip">67 days</span>
           </div>
+          </div>
+          <p class="s5-feat-narrative">Ad costs were at 34% of revenue. The previous agency said the category was just competitive. It was not — the listings were not converting the traffic the ads were buying. We rebuilt the system. Sixty-seven days later ad costs were at 11%, the product was on page one, and revenue was up 64% on the same spend. The seller's words: "I did not realise how much I had accepted as normal until I saw what normal was supposed to look like."</p>
+          
         </div>
       </div>
 
@@ -227,55 +297,60 @@
 
         <div class="s5-mini">
           <div class="s5-prod-img s5-mini-img">
-            <div class="s5-prod-img-grid"></div>
-            <span class="s5-prod-img-label">Product photo</span>
+            <div class="s5-prod-img-grid"><img src="assets/s5-2.png" alt="Product Image"></div>
+            <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
           </div>
           <div class="s5-mini-body">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-              <span class="s5-mini-client">[Client Name]</span>
-              <span class="s5-tag">Sports &amp; Outdoors</span>
-            </div>
-            <p class="s5-mini-narrative">Listing down Monday morning. Caught same day, restored by Thursday. Position recovered in 8 days — the seller found out when we told them it was already fixed.</p>
-            <div class="s5-mini-stats">
+            <div class="s5-mini-header">
+              <span class="s5-mini-client">Thomas Cross</span><br>
+              <span class="s5-tag">SPORTS &amp; OUTDOORS</span>
+              <span class="s5-rating">4.9 ⭐</span>
+              <div class="s5-mini-stats">
               <span class="s5-chip">Same-day catch</span>
               <span class="s5-chip">8 days</span>
             </div>
+            </div>
+            <p class="s5-mini-narrative">Listing down Monday morning. Caught same day, restored by Thursday. Position recovered in 8 days — the seller found out when we told them it was already fixed.</p>
           </div>
         </div>
 
         <div class="s5-mini">
           <div class="s5-prod-img s5-mini-img">
-            <div class="s5-prod-img-grid"></div>
-            <span class="s5-prod-img-label">Product photo</span>
+            <div class="s5-prod-img-grid"><img src="assets/s5-3.png" alt="Product Image"></div>
+            <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
           </div>
           <div class="s5-mini-body">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-              <span class="s5-mini-client">[Client Name]</span>
-              <span class="s5-tag">Beauty &amp; Personal Care</span>
-            </div>
-            <p class="s5-mini-narrative">Three products flat for six months. Recovery process across all three — within 90 days two reached page one organically. Ad spend on those two dropped 40%.</p>
-            <div class="s5-mini-stats">
+            <div class="s5-mini-header">
+              <span class="s5-mini-client">Olivia Brooks</span><br>
+              <span class="s5-tag">BEAUTY &amp; PERSONAL CARE</span>
+              <span class="s5-rating">4.9 ⭐</span>
+              <div class="s5-mini-stats">
               <span class="s5-chip">Ad spend -40%</span>
               <span class="s5-chip">90 days</span>
             </div>
+            </div>
+            <p class="s5-mini-narrative">Three products flat for six months. Recovery process across all three — within 90 days two reached page one organically. Ad spend on those two dropped 40%.</p>
+            
           </div>
         </div>
 
         <div class="s5-mini">
           <div class="s5-prod-img s5-mini-img">
-            <div class="s5-prod-img-grid"></div>
-            <span class="s5-prod-img-label">Product photo</span>
+            <div class="s5-prod-img-grid"><img src="assets/s5-4.png" alt="Product Image"></div>
+            <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
           </div>
           <div class="s5-mini-body">
-            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-              <span class="s5-mini-client">[Client Name]</span>
-              <span class="s5-tag">Tools &amp; Hardware</span>
-            </div>
-            <p class="s5-mini-narrative">Two agencies, 18 months, ACoS went up. First audit found four untouched problems. ACoS from 28% to 16% in 60 days.</p>
-            <div class="s5-mini-stats">
+            <div class="s5-mini-header">
+              <span class="s5-mini-client">Ethan Vance</span><br>
+              <span class="s5-tag">TOOLS &amp; HARDWARE</span>
+              <span class="s5-rating">4.9 ⭐</span>
+              <div class="s5-mini-stats">
               <span class="s5-chip">ACoS 28% → 16%</span>
               <span class="s5-chip">60 days</span>
             </div>
+            </div>
+            <p class="s5-mini-narrative">Two agencies, 18 months, ACoS went up. First audit found four untouched problems. ACoS from 28% to 16% in 60 days.</p>
+            
           </div>
         </div>
 
@@ -290,24 +365,41 @@
        SECTION 6 · Performance Guarantee (Variant A · Dark Statement)
        ══════════════════════════════════════════════════════ -->
   <section class="s6-section">
+
     <div class="s6-inner">
 
       <div class="s6-numeral-col">
         <span class="s6-big-num">90</span>
         <span class="s6-num-label">Day Guarantee</span>
+        <div style="">
+        <a href="#" class="s1-cta">
+          Book Free Audit
+          <svg viewBox="0 0 18 18">
+            <path d="M3 9h12M10 4l5 5-5 5" />
+          </svg>
+        </a>
       </div>
+      </div>
+      
 
       <div class="s6-content">
-        <div class="s6-badge">
+      
+        <!-- <div class="s6-badge">
           <span class="s6-badge-dot"></span>
           90-Day Performance Guarantee
-        </div>
+        </div> -->
         <h2 class="s6-header">We Do Not Win Unless You Win</h2>
         <div class="s6-body">
-          <p class="s6-p">Every engagement runs under a 90-day performance guarantee. We agree on the metrics before we touch anything. If we do not move them within 90 days, we keep working until we do. For free. <span class="no">No fine print.</span> <span class="no">No renegotiation.</span></p>
-          <p class="s6-p-close">We offer this because we already know what we are going to find in your account. The guarantee is not a sales tactic. It is the logical consequence of knowing the system well enough to fix it.</p>
+          <p class="s6-p">Every engagement runs under a 90-day performance guarantee. We agree on the metrics before we
+            touch anything. If we do not move them within 90 days, we keep working until we do. For free. <span
+              class="no">No fine print.</span> <span class="no">No renegotiation.</span></p>
+          <p class="s6-p-close">We offer this because we already know what we are going to find in your account. The
+            guarantee is not a sales tactic. It is the logical consequence of knowing the system well enough to fix it.
+          </p>
         </div>
+        
       </div>
+      
 
     </div>
   </section>
@@ -322,13 +414,16 @@
       <div class="s7-header">
         <span class="s7-eyebrow">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <circle cx="6" cy="6" r="5.25" stroke="currentColor" stroke-width="1.25"/>
-            <path d="M5.25 4.75C5.25 4.06 5.76 3.5 6.5 3.5S7.75 4.06 7.75 4.75c0 .52-.36.9-.72 1.12C6.64 6.18 6.25 6.5 6.25 7v.25h1.5V7c0-.22.22-.45.53-.65C8.74 5.97 9.25 5.43 9.25 4.75c0-1.24-1.01-2.25-2.75-2.25S3.75 3.51 3.75 4.75h1.5zm-.5 4.5h1.5v1.5h-1.5v-1.5z" fill="currentColor"/>
+            <circle cx="6" cy="6" r="5.25" stroke="currentColor" stroke-width="1.25" />
+            <path
+              d="M5.25 4.75C5.25 4.06 5.76 3.5 6.5 3.5S7.75 4.06 7.75 4.75c0 .52-.36.9-.72 1.12C6.64 6.18 6.25 6.5 6.25 7v.25h1.5V7c0-.22.22-.45.53-.65C8.74 5.97 9.25 5.43 9.25 4.75c0-1.24-1.01-2.25-2.75-2.25S3.75 3.51 3.75 4.75h1.5zm-.5 4.5h1.5v1.5h-1.5v-1.5z"
+              fill="currentColor" />
           </svg>
           Common Questions
         </span>
         <h2 class="s7-title">Before You Book</h2>
-        <p class="s7-sub">Most sellers who book the audit come in carrying one of three concerns. Here is what happens to each of them.</p>
+        <p class="s7-sub">Most sellers who book the audit come in carrying one of three concerns. Here is what happens
+          to each of them.</p>
       </div>
 
       <div class="s7-faq">
@@ -339,13 +434,16 @@
             <span class="s7-question">I have tried agencies before and it did not work.</span>
             <span class="s7-chevron" aria-hidden="true">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
-                <path d="M2 6h8M6 2v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M2 6h8M6 2v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
               </svg>
             </span>
           </button>
           <div class="s7-panel" id="s7-panel-1" role="region" aria-labelledby="s7-trigger-1">
             <div class="s7-panel-inner">
-              <p class="s7-response">We hear this on almost every first call. Most agencies are built around the appearance of work — busy dashboards, weekly reports, vague answers. The audit is how we prove we are different before you spend a dollar. You see exactly what is broken, what fixing it is worth, and how we approach it. You do not have to take our word for it. The audit shows you.</p>
+              <p class="s7-response">We hear this on almost every first call. Most agencies are built around the
+                appearance of work — busy dashboards, weekly reports, vague answers. The audit is how we prove we are
+                different before you spend a dollar. You see exactly what is broken, what fixing it is worth, and how we
+                approach it. You do not have to take our word for it. The audit shows you.</p>
             </div>
           </div>
         </div>
@@ -356,13 +454,15 @@
             <span class="s7-question">I do not want to be locked into a contract.</span>
             <span class="s7-chevron" aria-hidden="true">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
-                <path d="M2 6h8M6 2v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M2 6h8M6 2v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
               </svg>
             </span>
           </button>
           <div class="s7-panel" id="s7-panel-2" role="region" aria-labelledby="s7-trigger-2">
             <div class="s7-panel-inner">
-              <p class="s7-response">The audit has no commitment attached. If you move forward, the terms are straightforward — no lock-ins structured to make leaving painful. We keep clients because the account moves, not because the contract makes leaving difficult.</p>
+              <p class="s7-response">The audit has no commitment attached. If you move forward, the terms are
+                straightforward — no lock-ins structured to make leaving painful. We keep clients because the account
+                moves, not because the contract makes leaving difficult.</p>
             </div>
           </div>
         </div>
@@ -373,17 +473,27 @@
             <span class="s7-question">I do not have the time to onboard a new agency.</span>
             <span class="s7-chevron" aria-hidden="true">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
-                <path d="M2 6h8M6 2v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M2 6h8M6 2v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
               </svg>
             </span>
           </button>
           <div class="s7-panel" id="s7-panel-3" role="region" aria-labelledby="s7-trigger-3">
             <div class="s7-panel-inner">
-              <p class="s7-response">The audit takes 48 hours on our side. Your involvement is one conversation. After that we work inside the account — you do not manage us. Every Monday you get one page showing what changed and why. That is the only time it asks from you.</p>
+              <p class="s7-response">The audit takes 48 hours on our side. Your involvement is one conversation. After
+                that we work inside the account — you do not manage us. Every Monday you get one page showing what
+                changed and why. That is the only time it asks from you.</p>
             </div>
           </div>
         </div>
+      </div>
 
+      <div style="text-align: center;">
+        <a href="#" class="s1-cta">
+          Book Your Free Amazon Audit
+          <svg viewBox="0 0 18 18">
+            <path d="M3 9h12M10 4l5 5-5 5" />
+          </svg>
+        </a>
       </div>
 
     </div>
@@ -396,29 +506,46 @@
   <section class="s8-section">
     <div class="s8-inner">
 
-      <h2 class="s8-header"><span class="accent">90 Days.</span> Measurable Results. Or We Keep Working Free.</h2>
+      <h2 class="s8-header"> Measurable Results. Or We <br><span class="accent">Keep Working Free.</span></h2>
 
       <div class="s8-metrics">
         <div class="s8-metric">
-          <p class="s8-metric-num">90</p>
+          <p class="s8-metric-num">
+            <svg xmlns="http://www.w3.org/2000/svg" height="45" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+</svg>
+90</p>
           <p class="s8-metric-label">Day performance<br>window</p>
         </div>
         <div class="s8-metric">
-          <p class="s8-metric-num">3</p>
+          <p class="s8-metric-num"><svg xmlns="http://www.w3.org/2000/svg" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+</svg>3</p>
           <p class="s8-metric-label">New accounts taken<br>per month</p>
         </div>
         <div class="s8-metric">
-          <p class="s8-metric-num">0</p>
+          <p class="s8-metric-num"><svg xmlns="http://www.w3.org/2000/svg" height="50" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+</svg>0</p>
           <p class="s8-metric-label">Cost if we don't<br>hit the targets</p>
         </div>
       </div>
 
       <div class="s8-copy">
         <span class="s8-eyebrow">The Guarantee</span>
-        <p class="s8-p" style="margin-bottom: 32px;">We fix the system or we keep working until we do. No conditions. No exceptions. If your metrics have not moved in 90 days, we continue at no cost until they do.</p>
+        <p class="s8-p" style="margin-bottom: 32px;">We fix the system or we keep working until we do. No conditions. No
+          exceptions. If your metrics have not moved in 90 days, we continue at no cost until they do.</p>
         <span class="s8-eyebrow">The Commitment</span>
-        <p class="s8-p">We take three new accounts per month. Not as a tactic — because that is the number we can take on without quality slipping for anyone already inside.</p>
+        <p class="s8-p">We take three new accounts per month. Not as a tactic — because that is the number we can take
+          on without quality slipping for anyone already inside.</p>
       </div>
+
+      <a href="#" class="s1-cta">
+        Book Your Free Amazon Audit
+        <svg viewBox="0 0 18 18">
+          <path d="M3 9h12M10 4l5 5-5 5" />
+        </svg>
+      </a>
 
     </div>
   </section>
@@ -430,11 +557,14 @@
   <section class="s9-section">
     <div class="s9-inner">
 
-      <h2 class="s9-header">See What Is Actually Costing You</h2>
+      <h2 class="s9-header">See What Is Actually <br><span class="accent">Costing You</span></h2>
 
       <div class="s9-body">
-        <p class="s9-p">The audit covers wasted ad spend, listings that are not converting, ranking gaps, and catalog issues. For each one you get a dollar-value estimate of what it is costing you every month. Most accounts have at least two or three running at the same time.</p>
-        <p class="s9-p">48 hours. No cost. No commitment. A complete picture of your account before you decide anything.</p>
+        <p class="s9-p">The audit covers wasted ad spend, listings that are not converting, ranking gaps, and catalog
+          issues. For each one you get a dollar-value estimate of what it is costing you every month. Most accounts have
+          at least two or three running at the same time.</p>
+        <p class="s9-p">48 hours. No cost. No commitment. A complete picture of your account before you decide anything.
+        </p>
       </div>
 
       <div class="s9-cta-zone">
@@ -446,7 +576,8 @@
         <button class="s9-expand-trigger" aria-expanded="false">
           Want to see exactly what the audit covers before you book?
           <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </button>
       </div>
@@ -456,24 +587,29 @@
           <div class="s9-items">
 
             <div class="s9-item">
-              <p class="s9-item-text"><span class="item-lbl">Your ad spend</span> — where it is going, what it is returning, and where it is being wasted.</p>
+              <p class="s9-item-text"><span class="item-lbl">Your ad spend</span> — where it is going, what it is
+                returning, and where it is being wasted.</p>
             </div>
 
             <div class="s9-item">
-              <p class="s9-item-text"><span class="item-lbl">Your listings</span> — whether they are converting the traffic your ads are buying and what is causing them to lose sales.</p>
+              <p class="s9-item-text"><span class="item-lbl">Your listings</span> — whether they are converting the
+                traffic your ads are buying and what is causing them to lose sales.</p>
             </div>
 
             <div class="s9-item">
-              <p class="s9-item-text"><span class="item-lbl">Your ranking</span> — where your products sit organically and what is stopping them from moving.</p>
+              <p class="s9-item-text"><span class="item-lbl">Your ranking</span> — where your products sit organically
+                and what is stopping them from moving.</p>
             </div>
 
             <div class="s9-item">
-              <p class="s9-item-text"><span class="item-lbl">Your catalog</span> — whether the account structure is supporting your growth or working against it.</p>
+              <p class="s9-item-text"><span class="item-lbl">Your catalog</span> — whether the account structure is
+                supporting your growth or working against it.</p>
             </div>
 
           </div>
 
-          <p class="s9-panel-close">Each area comes with a plain-English summary and a dollar-value estimate. 48 hours. No cost. No obligation.</p>
+          <p class="s9-panel-close">Each area comes with a plain-English summary and a dollar-value estimate. 48 hours.
+            No cost. No obligation.</p>
         </div>
       </div>
 
@@ -486,7 +622,9 @@
 
       <div class="ftr-top">
         <div class="ftr-brand">
-          <a href="#" class="ftr-wordmark">AMZ Expand</a>
+          <a href="#" class="ftr-wordmark">
+            <img src="assets/logo-w.png" alt="AMZ Expand" style="height: 28px; width: auto;">
+          </a>
           <span class="ftr-closing">Built by Amazon sellers. Run for Amazon sellers.</span>
         </div>
         <nav class="ftr-links">
@@ -496,7 +634,8 @@
       </div>
 
       <p class="ftr-compliance">© 2025 AMZ Expand. All rights reserved.</p>
-      <p class="ftr-compliance" style="margin-top:8px;">Results shown reflect individual client accounts. Outcomes vary based on account history, product category, and market conditions.</p>
+      <p class="ftr-compliance" style="margin-top:8px;">Results shown reflect individual client accounts. Outcomes vary
+        based on account history, product category, and market conditions.</p>
 
     </div>
   </footer>
@@ -504,4 +643,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
