@@ -156,7 +156,7 @@
     .s1-headline {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(36px, 5vw, 64px);
-      font-weight: 400;
+      font-weight: 500;
       line-height: 1.05;
       letter-spacing: 0.02em;
       color: var(--on-surface);
@@ -171,7 +171,7 @@
       line-height: 1.6;
       color: var(--on-surface-variant);
       max-width: 640px;
-      margin-bottom: var(--stack-lg);
+      /* margin-bottom: var(--stack-lg); */
     }
 
     /* See it in action */
@@ -274,6 +274,10 @@
       align-items: center;
       gap: 6px;
       color: var(--outline);
+      border: 1px dotted var(--outline-variant);
+      padding: 4px 8px;
+      border-radius: 25px;
+      
     }
     .s1-trust-item svg {
       width: 14px;
@@ -720,7 +724,7 @@
     .s5 {
       background: var(--surface-low);
       padding: var(--section-pad) var(--gutter);
-      border-top: 1px solid var(--outline-variant);
+      /* border-top: 1px solid var(--outline-variant); */
     }
 
     .s5-inner { max-width: 1080px; margin: 0 auto; }
@@ -736,6 +740,8 @@
       color: var(--on-surface);
       margin-bottom: 16px;
     }
+
+    .s5-header .accent { color: var(--primary); }
 
     .s5-sub {
       font-family: 'DM Sans', sans-serif;
@@ -762,8 +768,14 @@
         linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
       background-size: 28px 28px;
-     
     }
+
+    .s5-prod-img-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .s5-prod-img-label {
       position: relative;
       z-index: 1;
@@ -782,18 +794,18 @@
       background: rgba(232,128,10,.07);
       border: 1px solid rgba(232,128,10,.16);
       border-radius: var(--r-full);
-      padding: 4px 11px;
+      /* padding: 4px 11px; */
       white-space: nowrap;
     }
     .s5-tag {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.07em;
       text-transform: uppercase;
       color: var(--on-surface-variant);
       background: var(--surface-container);
       border-radius: var(--r-full);
-      padding: 4px 10px;
+      /* padding: 4px 10px; */
     }
 
     /* featured card */
@@ -821,7 +833,7 @@
     .s5-feat-header {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      /* gap: 8px; */
     }
     .s5-feat-meta {
       display: flex;
@@ -835,20 +847,20 @@
       color: var(--on-surface);
     }
     .s5-feat-client {
-      font-size: 11px;
+      font-size: 16px;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 1.32px;
       text-transform: uppercase;
       color: var(--on-surface);
     }
     .s5-feat-narrative {
       font-family: 'DM Sans', sans-serif;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 400;
-      line-height: 1.75;
+      line-height: 160%;
       color: var(--on-surface-variant);
     }
-    .s5-feat-stats { display: flex; flex-wrap: wrap; gap: 6px; }
+    .s5-feat-stats { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 10px; font-size: 14px; }
 
     /* three-up row */
     .s5-trio {
@@ -878,14 +890,15 @@
     }
     .s5-mini-header {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
-      align-items: center;
-      gap: 8px;
+      align-items: start;
+      /* gap: 8px; */
     }
     .s5-mini-client {
-      font-size: 11px;
+      font-size: 16px;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 1.32px;
       text-transform: uppercase;
       color: var(--on-surface);
     }
@@ -893,7 +906,7 @@
       font-family: 'DM Sans', sans-serif;
       font-size: 14px;
       font-weight: 400;
-      line-height: 1.7;
+      line-height: 160%;
       color: var(--on-surface-variant);
       flex: 1;
     }
@@ -902,6 +915,7 @@
       flex-wrap: wrap;
       gap: 5px;
       padding-top: 10px;
+      font-size: 12px;
       /* border-top: 1px solid var(--outline-variant); */
     }
 
@@ -914,13 +928,41 @@
       /* border-bottom: 1px solid rgba(255,255,255,.05); */
     }
 
+    .s6-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      gap: 10px;
+      background: var(--primary);
+      color: var(--on-primary);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      padding: 18px 40px;
+      border-radius: var(--r-full);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 24px rgba(232,128,10,.35);
+      transition: background .18s, transform .18s, box-shadow .18s;
+      margin-top: var(--stack-md);
+      margin-bottom: var(--stack-md);
+    }
+    .s6-cta:hover {
+      background: var(--primary-container);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 36px rgba(232,128,10,.45);
+    }
+
     .s6-inner {
       max-width: 1060px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 340px 1fr;
       gap: 40px;
-      align-items: center;
+      place-items: center;
     }
 
     .s6-numeral-col {
@@ -1684,8 +1726,7 @@
     /* S6 — inline numeral beside label, content stacked below */
     .s6-inner { grid-template-columns: 1fr; gap: 40px; }
     .s6-numeral-col {
-      flex-direction: row;
-      align-items: baseline;
+      align-items: center;
       gap: 16px;
       border-right: none;
       padding-right: 0;
@@ -1718,9 +1759,22 @@
 
     /* For mobile */
     @media (max-width: 767px) {
+
+      .s4-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .s4-left {
+        align-items: center;
+      }
+
       .s5-feat-img { 
       aspect-ratio: 16/9; 
       order: -1; 
+    }
+
+    .s6-big-num {
+      line-height: 1.2;
     }
     }
 
@@ -1811,4 +1865,10 @@
       }
       .s6-big-num   { font-size: 220px; line-height: 0.85; }
       .s6-num-label { font-size: 36px; margin-top: 12px; }
+    }
+
+    .see-it-in-action {
+      position: relative;
+      top: 60px;
+      left: 440px;
     }
