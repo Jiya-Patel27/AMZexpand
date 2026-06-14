@@ -157,13 +157,39 @@
 
       <!-- Logo Grid Section -->
       <div class="s2-logos">
-        <div class="s2-logos-grid">
+        <!-- Desktop grid view -->
+        <div class="s2-logos-grid desktop-view">
           <img src="assets/amz1.png" alt="Brand 1" class="s2-logo">
           <img src="assets/amz2.png" alt="Brand 2" class="s2-logo">
           <img src="assets/amz3.png" alt="Brand 3" class="s2-logo">
           <img src="assets/amz4.png" alt="Brand 4" class="s2-logo">
           <img src="assets/amz5.png" alt="Brand 5" class="s2-logo">
           <img src="assets/amz6.png" alt="Brand 6" class="s2-logo">
+        </div>
+        
+        <!-- Mobile/Tablet carousel view -->
+        <div class="s2-logos-carousel mobile-view">
+          <div class="carousel-track" id="logoCarouselTrack">
+            <div class="carousel-slide">
+              <img src="assets/amz1.png" alt="Brand 1" class="s2-logo">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/amz2.png" alt="Brand 2" class="s2-logo">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/amz3.png" alt="Brand 3" class="s2-logo">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/amz4.png" alt="Brand 4" class="s2-logo">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/amz5.png" alt="Brand 5" class="s2-logo">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/amz6.png" alt="Brand 6" class="s2-logo">
+            </div>
+          </div>
+          <div class="carousel-dots" id="logoCarouselDots"></div>
         </div>
       </div>
 
@@ -315,76 +341,77 @@
       </div>
 
       <!-- three compact results -->
-      <div class="s5-trio">
+      <div class="s5-trio-carousel">
+        <div class="s5-trio-track" id="s5-trio-track">
 
-        <div class="s5-mini">
-          <div class="s5-prod-img s5-mini-img">
-            <div class="s5-prod-img-grid"><img src="assets/s5-2.png" alt="Product Image"></div>
-            <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
-          </div>
-          <div class="s5-mini-body">
-            <div class="s5-mini-header">
-              <span class="s5-mini-client">Thomas Cross</span>
-              <div>
-              <span class="s5-tag">SPORTS &amp; OUTDOORS</span>&nbsp;&nbsp;
-              <span class="s5-rating">4.9 ⭐</span>
-              </div>
-              <div class="s5-mini-stats">
-                <span class="s5-chip">Same-day catch</span>
-                <span class="s5-chip">8 days</span>
-              </div>
+          <div class="s5-mini">
+            <div class="s5-prod-img s5-mini-img">
+              <div class="s5-prod-img-grid"><img src="assets/s5-2.png" alt="Product Image"></div>
+              <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
             </div>
-            <p class="s5-mini-narrative">Listing down Monday morning. Caught same day, restored by Thursday. Position
-              recovered in 8 days — the seller found out when we told them it was already fixed.</p>
-          </div>
-        </div>
-
-        <div class="s5-mini">
-          <div class="s5-prod-img s5-mini-img">
-            <div class="s5-prod-img-grid"><img src="assets/s5-3.png" alt="Product Image"></div>
-            <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
-          </div>
-          <div class="s5-mini-body">
-            <div class="s5-mini-header">
-              <span class="s5-mini-client">Olivia Brooks</span>
-              <div>
-              <span class="s5-tag">BEAUTY &amp; PERSONAL CARE</span>&nbsp;&nbsp;
-              <span class="s5-rating">4.9 ⭐</span>
+            <div class="s5-mini-body">
+              <div class="s5-mini-header">
+                <span class="s5-mini-client">Thomas Cross</span>
+                <div>
+                <span class="s5-tag">SPORTS &amp; OUTDOORS</span>&nbsp;&nbsp;
+                <span class="s5-rating">4.9 ⭐</span>
+                </div>
+                <div class="s5-mini-stats">
+                  <span class="s5-chip">Same-day catch</span>
+                  <span class="s5-chip">8 days</span>
+                </div>
               </div>
-              <div class="s5-mini-stats">
-                <span class="s5-chip">Ad spend -40%</span>
-                <span class="s5-chip">90 days</span>
-              </div>
+              <p class="s5-mini-narrative">Listing down Monday morning. Caught same day, restored by Thursday. Position
+                recovered in 8 days — the seller found out when we told them it was already fixed.</p>
             </div>
-            <p class="s5-mini-narrative">Three products flat for six months. Recovery process across all three — within
-              90 days two reached page one organically. Ad spend on those two dropped 40%.</p>
-
           </div>
-        </div>
 
-        <div class="s5-mini">
-          <div class="s5-prod-img s5-mini-img">
-            <div class="s5-prod-img-grid"><img src="assets/s5-4.png" alt="Product Image"></div>
-            <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
-          </div>
-          <div class="s5-mini-body">
-            <div class="s5-mini-header">
-              <span class="s5-mini-client">Ethan Vance</span>
-              <div>
-              <span class="s5-tag">TOOLS &amp; HARDWARE</span>&nbsp;&nbsp;
-              <span class="s5-rating">4.9 ⭐</span>
-              </div>
-              <div class="s5-mini-stats">
-                <span class="s5-chip">ACoS 28% → 16%</span>
-                <span class="s5-chip">60 days</span>
-              </div>
+          <div class="s5-mini">
+            <div class="s5-prod-img s5-mini-img">
+              <div class="s5-prod-img-grid"><img src="assets/s5-3.png" alt="Product Image"></div>
+              <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
             </div>
-            <p class="s5-mini-narrative">Two agencies, 18 months, ACoS went up. First audit found four untouched
-              problems. ACoS from 28% to 16% in 60 days.</p>
-
+            <div class="s5-mini-body">
+              <div class="s5-mini-header">
+                <span class="s5-mini-client">Olivia Brooks</span>
+                <div>
+                <span class="s5-tag">BEAUTY &amp; PERSONAL CARE</span>&nbsp;&nbsp;
+                <span class="s5-rating">4.9 ⭐</span>
+                </div>
+                <div class="s5-mini-stats">
+                  <span class="s5-chip">Ad spend -40%</span>
+                  <span class="s5-chip">90 days</span>
+                </div>
+              </div>
+              <p class="s5-mini-narrative">Three products flat for six months. Recovery process across all three — within
+                90 days two reached page one organically. Ad spend on those two dropped 40%.</p>
+            </div>
           </div>
-        </div>
 
+          <div class="s5-mini">
+            <div class="s5-prod-img s5-mini-img">
+              <div class="s5-prod-img-grid"><img src="assets/s5-4.png" alt="Product Image"></div>
+              <span class="s5-prod-img-label">AMAZON PAGE SCREENSHOT</span>
+            </div>
+            <div class="s5-mini-body">
+              <div class="s5-mini-header">
+                <span class="s5-mini-client">Ethan Vance</span>
+                <div>
+                <span class="s5-tag">TOOLS &amp; HARDWARE</span>&nbsp;&nbsp;
+                <span class="s5-rating">4.9 ⭐</span>
+                </div>
+                <div class="s5-mini-stats">
+                  <span class="s5-chip">ACoS 28% → 16%</span>
+                  <span class="s5-chip">60 days</span>
+                </div>
+              </div>
+              <p class="s5-mini-narrative">Two agencies, 18 months, ACoS went up. First audit found four untouched
+                problems. ACoS from 28% to 16% in 60 days.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="s5-trio-dots" id="s5-trio-dots"></div>
       </div>
 
 

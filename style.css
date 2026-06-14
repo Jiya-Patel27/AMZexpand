@@ -202,6 +202,13 @@
       stroke-linejoin: round;
     }
 
+    .see-it-in-action {
+      position: relative;
+      top: 60px;
+      left: 440px;
+    }
+
+
     /* video */
     .s1-vsl { width: 100%; margin-bottom: var(--stack-md); position: relative; padding-bottom: 32px; }
 
@@ -476,16 +483,68 @@
     }
 
     .s2-logo {
-      width: 156.30px;
-      height: auto;
-      max-width: 200px;
+      width: 105.38px;
+      height: 112.2px;
+      max-width: 146.29px;
+      max-height: 155.76px;
+      object-fit: contain;
       opacity: 0.8;
       transition: opacity 0.2s ease;
-      padding-right: 12px;
     }
 
     .s2-logo:hover {
       opacity: 1;
+    }
+    
+    .mobile-view {
+      display: none;
+    }
+    .desktop-view {
+      display: grid;
+    }
+    
+    /* Carousel styles for mobile/tablet */
+    .s2-logos-carousel {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-track {
+      display: flex;
+      align-items: center;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-slide {
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 0 20px;
+    }
+    .carousel-slide .s2-logo {
+      width: 105.38px;
+      height: 112.2px;
+      max-width: 146.29px;
+      max-height: 155.76px;
+      object-fit: contain;
+    }
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+    }
+    .carousel-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--outline-variant);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .carousel-dot.active {
+      background: black;
     }
 
 
@@ -917,6 +976,52 @@
       padding-top: 10px;
       font-size: 12px;
       /* border-top: 1px solid var(--outline-variant); */
+    }
+
+    /* Desktop: Original grid layout */
+    .s5-trio-carousel {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .s5-trio-dots {
+      display: none;
+    }
+
+    /* Mobile/tablet: Carousel layout (like logo carousel) */
+    @media (max-width: 1079px) {
+      .s5-trio-carousel {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      .s5-trio-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .s5-trio-track .s5-mini {
+        min-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+      }
+      .s5-trio-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 20px;
+      }
+      .s5-trio-dots .carousel-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--outline-variant);
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .s5-trio-dots .carousel-dot.active {
+        background: black;
+      }
     }
 
 
@@ -1712,10 +1817,12 @@
     .s5-feat-content { padding: 24px 20px 28px; }
     .s5-trio { grid-template-columns: 1fr; }
 
-    /* S2 logo grid responsive */
-    .s2-logos-grid {
-      /* grid-template-columns: repeat(2, 1fr);
-      gap: 32px; */
+    /* S2 logo section responsive: swap to carousel for mobile/tablet */
+    .desktop-view {
+      display: none;
+    }
+    .mobile-view {
+      display: block;
     }
 
     /* S6 — inline numeral beside label, content stacked below */
@@ -1756,9 +1863,10 @@
     @media (max-width: 767px) {
 
       .see-it-in-action{
+        display: block;
         position: relative;
-        top:50px;
-        left: 220px;
+        top: 10px;
+        left: 0px;
       }
 
       .s4-layout {
@@ -1777,6 +1885,16 @@
     .s6-big-num {
       line-height: 1.2;
     }
+    }
+    
+    /* ── Desktop view (≥ 1080px) ───────────────────────────────── */
+    @media (min-width: 1080px) {
+      .desktop-view {
+        display: grid;
+      }
+      .mobile-view {
+        display: none;
+      }
     }
 
 
@@ -1873,8 +1991,4 @@
       bottom: 65px;
     }
 
-    .see-it-in-action {
-      position: relative;
-      top: 60px;
-      left: 440px;
-    }
+    

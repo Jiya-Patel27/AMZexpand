@@ -108,3 +108,131 @@
         }
       });
     })();
+
+    /* ── Section 2 logo carousel ── */
+    (function () {
+      var track = document.getElementById('logoCarouselTrack');
+      var dotsContainer = document.getElementById('logoCarouselDots');
+      if (!track || !dotsContainer) return;
+      
+      var slides = Array.from(track.querySelectorAll('.carousel-slide'));
+      var currentIndex = 0;
+      var totalSlides = slides.length;
+      var autoRotateInterval;
+      
+      // Create dots
+      for (var i = 0; i < totalSlides; i++) {
+        var dot = document.createElement('div');
+        dot.classList.add('carousel-dot');
+        if (i === 0) dot.classList.add('active');
+        (function (index) {
+          dot.addEventListener('click', function () {
+            goToSlide(index);
+            resetAutoRotate();
+          });
+        })(i);
+        dotsContainer.appendChild(dot);
+      }
+      
+      function goToSlide(index) {
+        currentIndex = index;
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        updateDots();
+      }
+      
+      function updateDots() {
+        var dots = dotsContainer.querySelectorAll('.carousel-dot');
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle('active', i === currentIndex);
+        });
+      }
+      
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        goToSlide(currentIndex);
+      }
+      
+      function startAutoRotate() {
+        autoRotateInterval = setInterval(nextSlide, 2500); // 2.5 seconds
+      }
+      
+      function resetAutoRotate() {
+        clearInterval(autoRotateInterval);
+        startAutoRotate();
+      }
+      
+      // Start auto-rotation
+      startAutoRotate();
+      
+      // Pause on hover, resume on leave
+      track.addEventListener('mouseenter', function () {
+        clearInterval(autoRotateInterval);
+      });
+      track.addEventListener('mouseleave', function () {
+        startAutoRotate();
+      });
+    })();
+
+    /* ── Section 5 mini-card carousel (mobile/tablet) ── */
+    (function () {
+      var track = document.getElementById('s5-trio-track');
+      var dotsContainer = document.getElementById('s5-trio-dots');
+      if (!track || !dotsContainer) return;
+      
+      var slides = Array.from(track.querySelectorAll('.s5-mini'));
+      var currentIndex = 0;
+      var totalSlides = slides.length;
+      var autoRotateInterval;
+      
+      // Create dots
+      for (var i = 0; i < totalSlides; i++) {
+        var dot = document.createElement('div');
+        dot.classList.add('carousel-dot');
+        if (i === 0) dot.classList.add('active');
+        (function (index) {
+          dot.addEventListener('click', function () {
+            goToSlide(index);
+            resetAutoRotate();
+          });
+        })(i);
+        dotsContainer.appendChild(dot);
+      }
+      
+      function goToSlide(index) {
+        currentIndex = index;
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+        updateDots();
+      }
+      
+      function updateDots() {
+        var dots = dotsContainer.querySelectorAll('.carousel-dot');
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle('active', i === currentIndex);
+        });
+      }
+      
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        goToSlide(currentIndex);
+      }
+      
+      function startAutoRotate() {
+        autoRotateInterval = setInterval(nextSlide, 2500); // Match logo carousel speed
+      }
+      
+      function resetAutoRotate() {
+        clearInterval(autoRotateInterval);
+        startAutoRotate();
+      }
+      
+      // Start auto-rotation
+      startAutoRotate();
+      
+      // Pause on hover, resume on leave
+      track.addEventListener('mouseenter', function () {
+        clearInterval(autoRotateInterval);
+      });
+      track.addEventListener('mouseleave', function () {
+        startAutoRotate();
+      });
+    })();
