@@ -183,20 +183,7 @@
       var currentIndex = 0;
       var totalSlides = slides.length;
       var autoRotateInterval;
-      
-      // Create dots
-      for (var i = 0; i < totalSlides; i++) {
-        var dot = document.createElement('div');
-        dot.classList.add('carousel-dot');
-        if (i === 0) dot.classList.add('active');
-        (function (index) {
-          dot.addEventListener('click', function () {
-            goToSlide(index);
-            resetAutoRotate();
-          });
-        })(i);
-        dotsContainer.appendChild(dot);
-      }
+      var dotsCreated = false;
       
       function goToSlide(index) {
         currentIndex = index;
@@ -217,22 +204,67 @@
       }
       
       function startAutoRotate() {
+        if (autoRotateInterval) return;
         autoRotateInterval = setInterval(nextSlide, 2500); // Match logo carousel speed
       }
       
+      function stopAutoRotate() {
+        if (autoRotateInterval) {
+          clearInterval(autoRotateInterval);
+          autoRotateInterval = null;
+        }
+      }
+      
       function resetAutoRotate() {
-        clearInterval(autoRotateInterval);
+        stopAutoRotate();
         startAutoRotate();
       }
       
-      // Start auto-rotation
-      startAutoRotate();
+      function handleResize() {
+        var isMobile = window.innerWidth <= 1079;
+        
+        if (isMobile) {
+          // Mobile/tablet: Initialize carousel
+          if (!dotsCreated) {
+            // Create dots
+            for (var i = 0; i < totalSlides; i++) {
+              var dot = document.createElement('div');
+              dot.classList.add('carousel-dot');
+              if (i === 0) dot.classList.add('active');
+              (function (index) {
+                dot.addEventListener('click', function () {
+                  goToSlide(index);
+                  resetAutoRotate();
+                });
+              })(i);
+              dotsContainer.appendChild(dot);
+            }
+            dotsCreated = true;
+          }
+          
+          // Add hover listeners
+          track.addEventListener('mouseenter', stopAutoRotate);
+          track.addEventListener('mouseleave', startAutoRotate);
+          
+          // Start auto-rotate
+          startAutoRotate();
+        } else {
+          // Desktop: Reset to normal
+          stopAutoRotate();
+          
+          // Remove hover listeners
+          track.removeEventListener('mouseenter', stopAutoRotate);
+          track.removeEventListener('mouseleave', startAutoRotate);
+          
+          // Reset transform
+          track.style.transform = '';
+          currentIndex = 0;
+        }
+      }
       
-      // Pause on hover, resume on leave
-      track.addEventListener('mouseenter', function () {
-        clearInterval(autoRotateInterval);
-      });
-      track.addEventListener('mouseleave', function () {
-        startAutoRotate();
-      });
+      // Initial check
+      handleResize();
+      
+      // Listen for window resize
+      window.addEventListener('resize', handleResize);
     })();

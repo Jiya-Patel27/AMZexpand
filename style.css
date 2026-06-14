@@ -979,14 +979,19 @@
     }
 
     /* Desktop: Original grid layout */
-    .s5-trio-carousel {
+    /* .s5-trio-carousel {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-    }
+    } */
     .s5-trio-dots {
       display: none;
     }
+    .s5-trio-track {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      }
 
     /* Mobile/tablet: Carousel layout (like logo carousel) */
     @media (max-width: 1079px) {
@@ -1862,13 +1867,6 @@
     /* For mobile */
     @media (max-width: 767px) {
 
-      .see-it-in-action{
-        display: block;
-        position: relative;
-        top: 10px;
-        left: 0px;
-      }
-
       .s4-layout {
         grid-template-columns: 1fr;
       }
@@ -1886,18 +1884,16 @@
       line-height: 1.2;
     }
     }
-    
-    /* ── Desktop view (≥ 1080px) ───────────────────────────────── */
-    @media (min-width: 1080px) {
-      .desktop-view {
-        display: grid;
-      }
-      .mobile-view {
-        display: none;
+
+    @media (max-width: 1050px) {
+      .see-it-in-action{
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 0px;
       }
     }
-
-
+    
     /* ── 768px+: tablet ──────────────────────────────────────── */
     @media (min-width: 768px) {
       :root { --section-pad: 88px; --gutter: 24px; }
@@ -1953,6 +1949,14 @@
 
     /* ── 1080px+: desktop ────────────────────────────────────── */
     @media (min-width: 1080px) {
+
+      .desktop-view {
+        display: grid;
+      }
+      .mobile-view {
+        display: none;
+      }
+
       :root { --section-pad: 120px; --gutter: 40px; }
 
       /* S3 — 3-col */
