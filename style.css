@@ -990,7 +990,7 @@
     .s5-trio-track {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 24px;
+      gap: 16px;
       }
 
     /* Mobile/tablet: Carousel layout (like logo carousel) */
@@ -1004,10 +1004,10 @@
       .s5-trio-track {
         display: flex;
         transition: transform 0.5s ease-in-out;
+        gap: 0px;
       }
       .s5-trio-track .s5-mini {
         min-width: 100%;
-        padding: 0 16px;
         box-sizing: border-box;
       }
       .s5-trio-dots {
@@ -1310,7 +1310,7 @@
       border-radius: var(--r-xl);
       overflow: hidden;
       margin-bottom: 64px;
-      background: var(--surface-lowest);
+      /* background: var(--surface-lowest); */
       /* box-shadow: var(--shadow-sm); */
     }
 
